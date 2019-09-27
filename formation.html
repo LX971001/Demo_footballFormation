@@ -1,0 +1,1359 @@
+<!doctype html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>111</title>
+		<script src="js/jquery-2.1.4.min.js"></script>
+		<script src="js/Tdrag.js"></script>
+		<style>
+			.pitch {
+				position: fixed;
+				width: 1280px;
+				height: 800px;
+				background-image: url(img/football/pitch.jpg);
+			}
+
+			#Messi {
+				position: fixed;
+				left: 1205px;
+				top: 0px;
+				background-color: #D3D4D3;
+				text-align: center;
+				width: 75px;
+				height: 100px;
+
+			}
+
+			#Xavi {
+				position: fixed;
+				left: 1205px;
+				top: 100px;
+				background-color: #D3D4D3;
+				text-align: center;
+				width: 75px;
+				height: 100px;
+			}
+
+			#Dembele {
+				position: fixed;
+				left: 1205px;
+				top: 200px;
+				background-color: #D3D4D3;
+				text-align: center;
+				width: 75px;
+				height: 100px;
+
+			}
+
+			#Suarez {
+				position: fixed;
+				left: 1205px;
+				top: 300px;
+				background-color: #D3D4D3;
+				text-align: center;
+				width: 75px;
+				height: 100px;
+
+			}
+
+			#Bus {
+				position: fixed;
+				left: 1205px;
+				top: 400px;
+				background-color: #D3D4D3;
+				text-align: center;
+				width: 75px;
+				height: 100px;
+
+			}
+
+			#Lac {
+				position: fixed;
+				left: 1205px;
+				top: 500px;
+				background-color: #D3D4D3;
+				text-align: center;
+				width: 75px;
+				height: 100px;
+			}
+
+			#Vidal {
+				position: fixed;
+				left: 1205px;
+				top: 600px;
+				background-color: #D3D4D3;
+				text-align: center;
+				width: 75px;
+				height: 100px;
+
+			}
+
+			#Derong {
+				position: fixed;
+				left: 1205px;
+				top: 700px;
+				background-color: #D3D4D3;
+				text-align: center;
+				width: 75px;
+				height: 100px;
+
+			}
+
+			#Pique {
+				position: fixed;
+				left: 0px;
+				top: 0px;
+				background-color: #D3D4D3;
+				text-align: center;
+				width: 75px;
+				height: 100px;
+
+			}
+
+			#Alba {
+				position: fixed;
+				left: 0px;
+				top: 100px;
+				background-color: #D3D4D3;
+				text-align: center;
+				width: 75px;
+				height: 100px;
+			}
+
+			#Niersong {
+				position: fixed;
+				left: 0px;
+				top: 200px;
+				background-color: #D3D4D3;
+				text-align: center;
+				width: 75px;
+				height: 100px;
+
+			}
+
+			#Umtiti {
+				position: fixed;
+				left: 0px;
+				top: 300px;
+				background-color: #D3D4D3;
+				text-align: center;
+				width: 75px;
+				height: 100px;
+
+			}
+
+			#Roboto {
+				position: fixed;
+				left: 0px;
+				top: 400px;
+				background-color: #D3D4D3;
+				text-align: center;
+				width: 75px;
+				height: 100px;
+
+			}
+
+			#Tel {
+				position: fixed;
+				left: 0px;
+				top: 500px;
+				background-color: #D3D4D3;
+				text-align: center;
+				width: 75px;
+				height: 100px;
+			}
+
+			#Langgelai {
+				position: fixed;
+				left: 0px;
+				top: 600px;
+				background-color: #D3D4D3;
+				text-align: center;
+				width: 75px;
+				height: 100px;
+
+			}
+
+			#Fati {
+				position: fixed;
+				left: 0px;
+				top: 700px;
+				background-color: #D3D4D3;
+				text-align: center;
+				width: 75px;
+				height: 100px;
+
+			}
+		</style>
+	</head>
+	<body>
+		<div class="pitch">
+			<div id="Messi"><img style="width: 70px; padding-top: 3px;" src="img/football/Messi.jpg" />
+				<p style="margin: 0;">替补</p>
+			</div>
+			<div id="Xavi"><img style="width: 70px; padding-top: 3px;" src="img/football/Gridsman.jpg" />
+				<p style="margin: 0;">替补</p>
+			</div>
+			<div id="Dembele"><img style="width: 70px; padding-top: 3px;" src="img/football/Dembele.jpg" />
+				<p style="margin: 0;">替补</p>
+			</div>
+			<div id="Suarez"><img style="width: 70px; padding-top: 3px;" src="img/football/Suarez.jpg" />
+				<p style="margin: 0;">替补</p>
+			</div>
+			<div id="Bus"><img style="width: 70px; padding-top: 3px;" src="img/football/Busqets.jpg" />
+				<p style="margin: 0;">替补</p>
+			</div>
+			<div id="Lac"><img style="width: 70px; padding-top: 3px;" src="img/football/Lac.jpg" />
+				<p style="margin: 0;">替补</p>
+			</div>
+			<div id="Vidal"><img style="width: 70px; padding-top: 3px;" src="img/football/Vidal.jpg" />
+				<p style="margin: 0;">替补</p>
+			</div>
+			<div id="Derong"><img style="width: 70px; padding-top: 3px;" src="img/football/Derong.jpg" />
+				<p style="margin: 0;">替补</p>
+			</div>
+			<div id="Pique"><img style="width: 70px; padding-top: 3px;" src="img/football/Pique.jpg" />
+				<p style="margin: 0;">替补</p>
+			</div>
+			<div id="Alba"><img style="width: 70px; padding-top: 3px;" src="img/football/Alba.jpg" />
+				<p style="margin: 0;">替补</p>
+			</div>
+			<div id="Niersong"><img style="width: 70px; padding-top: 3px;" src="img/football/Niersong.jpg" />
+				<p style="margin: 0;">替补</p>
+			</div>
+			<div id="Umtiti"><img style="width: 70px; padding-top: 3px;" src="img/football/Umtiti.jpg" />
+				<p style="margin: 0;">替补</p>
+			</div>
+			<div id="Roboto"><img style="width: 70px; padding-top: 3px;" src="img/football/Roboto.jpg" />
+				<p style="margin: 0;">替补</p>
+			</div>
+			<div id="Langgelai"><img style="width: 70px; padding-top: 3px;" src="img/football/Langgelai.jpg" />
+				<p style="margin: 0;">替补</p>
+			</div>
+			<div id="Tel"><img style="width: 70px; padding-top: 3px;" src="img/football/Tel.jpg" />
+				<p style="margin: 0;">替补</p>
+			</div>
+			<div id="Fati"><img style="width: 70px; padding-top: 3px;" src="img/football/Fati.png" />
+				<p style="margin: 0;">替补</p>
+			</div>
+		</div>
+	</body>
+	<script>
+		var a = 0;
+		var GK = 0; //门将唯一
+		var LD = 0; //左边卫唯一
+		var RD = 0; //右边卫唯一
+		var LM = 0;
+		var RM = 0;
+		var LF = 0;
+		var RF = 0;
+		var D = 0;
+		var DM = 0;
+		var M = 0;
+		var Fm = 0;
+		var F = 0;
+
+
+
+		$(function() {
+			$("#Messi").Tdrag({
+				scope: ".pitch",
+			});
+			$("#Xavi").Tdrag({
+				scope: ".pitch"
+			});
+			$("#Dembele").Tdrag({
+				scope: ".pitch"
+			});
+			$("#Suarez").Tdrag({
+				scope: ".pitch"
+			});
+			$("#Bus").Tdrag({
+				scope: ".pitch"
+			});
+			$("#Lac").Tdrag({
+				scope: ".pitch"
+			});
+			$("#Vidal").Tdrag({
+				scope: ".pitch"
+			});
+			$("#Niersong").Tdrag({
+				scope: ".pitch"
+			});
+			$("#Fati").Tdrag({
+				scope: ".pitch"
+			});
+			$("#Pique").Tdrag({
+				scope: ".pitch"
+			});
+			$("#Umtiti").Tdrag({
+				scope: ".pitch"
+			});
+			$("#Tel").Tdrag({
+				scope: ".pitch"
+			});
+			$("#Alba").Tdrag({
+				scope: ".pitch"
+			});
+			$("#Roboto").Tdrag({
+				scope: ".pitch"
+			});
+			$("#Derong").Tdrag({
+				scope: ".pitch"
+			});
+			$("#Langgelai").Tdrag({
+				scope: ".pitch"
+			});
+		})
+
+		$(".pitch").children().mouseup(function() {
+			//待写 状态判断
+			var x = parseInt($(this).css("left"));
+			var y = parseInt($(this).css("top"));
+			//console.log(x);
+			//console.log(y);
+			//onPitch(a,x,y);
+			//console.log(typeof(x));
+			//var b = parseInt(x);
+			//console.log(b);
+			//console.log(typeof(b));
+
+
+			//上场
+			while (a < 11) {
+				var Role;
+
+
+				//后场
+				if (x > 65 && x < 400) {
+					$(this).css("background-color", " #007DDB");
+
+					if ($(this).find("p").text() == "替补") {
+						a++;
+					}
+					if (x < 200 && y > 270 && y < 430) {
+
+						if (GK == 0) {
+							Role = "门将";
+							GK++
+							switch ($(this).find("p").text()) {
+								case "门将":
+									GK--;
+									break;
+								case "左边卫":
+									LD--;
+									break;
+								case "右边卫":
+									RD--;
+									break;
+								case "左前卫":
+									LM--;
+									break;
+								case "右前卫":
+									RM--;
+									break;
+								case "左边锋":
+									LF--;
+									break;
+								case "右边锋":
+									RF--;
+									break;
+
+							}
+						} else if (GK == 1) {
+							if ($(this).find("p").text() == "门将") {
+								Role = "门将";
+							} else {
+								Role = "清道夫";
+							}
+						}
+
+
+
+					} else if (y < 100) {
+						if (LD == 0) {
+
+							LD++;
+							Role = "左边卫";
+							switch ($(this).find("p").text()) {
+								case "门将":
+									GK--;
+									break;
+								case "左边卫":
+									LD--;
+									break;
+								case "右边卫":
+									RD--;
+									break;
+								case "左前卫":
+									LM--;
+									break;
+								case "右前卫":
+									RM--;
+									break;
+								case "左边锋":
+									LF--;
+									break;
+								case "右边锋":
+									RF--;
+									break;
+
+							}
+						} else if ($(this).find("p").text() == "左边卫") {
+							Role = "左边卫";
+						}
+					} else if (y > 600) {
+						if (RD == 0) {
+
+							RD++;
+							Role = "右边卫";
+							switch ($(this).find("p").text()) {
+								case "门将":
+									GK--;
+									break;
+								case "左边卫":
+									LD--;
+									break;
+								case "右边卫":
+									RD--;
+									break;
+								case "左前卫":
+									LM--;
+									break;
+								case "右前卫":
+									RM--;
+									break;
+								case "左边锋":
+									LF--;
+									break;
+								case "右边锋":
+									RF--;
+									break;
+
+							}
+						} else if ($(this).find("p").text() == "右边卫") {
+							Role = "右边卫";
+						}
+					}
+					switch (Role) {
+						case "门将":
+							$(this).css("background-color", "yellow");
+							$(this).find("p").text("门将");
+							break;
+						case "清道夫":
+							$(this).find("p").text("清道夫");
+							break;
+						case "左边卫":
+							$(this).find("p").text("左边卫");
+							break;
+						case "右边卫":
+							$(this).find("p").text("右边卫");
+							break;
+						default:
+							switch ($(this).find("p").text()) {
+								case "门将":
+									GK--;
+									break;
+								case "左边卫":
+									LD--;
+									break;
+								case "右边卫":
+									RD--;
+									break;
+								case "左前卫":
+									LM--;
+									break;
+								case "右前卫":
+									RM--;
+									break;
+								case "左边锋":
+									LF--;
+									break;
+								case "右边锋":
+									RF--;
+									break;
+
+							}
+							Role = "中后卫";
+							$(this).find("p").text("中后卫");
+
+							break;
+
+					}
+
+				}
+				//中场
+				else if (x > 399 && x < 900) {
+					$(this).css("background-color", "#4CAE4C");
+					if ($(this).find("p").text() == "替补") {
+						a++;
+					}
+					if (y < 100) {
+						if (LM == 0) {
+
+							LM++;
+							Role = "左前卫";
+							switch ($(this).find("p").text()) {
+								case "门将":
+									GK--;
+									break;
+								case "左边卫":
+									LD--;
+									break;
+								case "右边卫":
+									RD--;
+									break;
+								case "左前卫":
+									LM--;
+									break;
+								case "右前卫":
+									RM--;
+									break;
+								case "左边锋":
+									LF--;
+									break;
+								case "右边锋":
+									RF--;
+									break;
+
+							}
+						} else if ($(this).find("p").text() == "左前卫") {
+							Role = "左前卫";
+						}
+
+					} else if (y > 600) {
+						if (RM == 0) {
+
+							RM++;
+							Role = "右前卫";
+							switch ($(this).find("p").text()) {
+								case "门将":
+									GK--;
+									break;
+								case "左边卫":
+									LD--;
+									break;
+								case "右边卫":
+									RD--;
+									break;
+								case "左前卫":
+									LM--;
+									break;
+								case "右前卫":
+									RM--;
+									break;
+								case "左边锋":
+									LF--;
+									break;
+								case "右边锋":
+									RF--;
+									break;
+
+							}
+						} else if ($(this).find("p").text() == "右前卫") {
+							Role = "右前卫";
+						}
+
+					} else if (y < 600 && y > 100 && x < 510) {
+
+						Role = "后腰";
+						switch ($(this).find("p").text()) {
+							case "门将":
+								GK--;
+								break;
+							case "左边卫":
+								LD--;
+								break;
+							case "右边卫":
+								RD--;
+								break;
+							case "左前卫":
+								LM--;
+								break;
+							case "右前卫":
+								RM--;
+								break;
+							case "左边锋":
+								LF--;
+								break;
+							case "右边锋":
+								RF--;
+								break;
+
+						}
+
+
+					} else if (y < 600 && y > 100 && x > 690) {
+
+						Role = "前腰";
+						switch ($(this).find("p").text()) {
+							case "门将":
+								GK--;
+								break;
+							case "左边卫":
+								LD--;
+								break;
+							case "右边卫":
+								RD--;
+								break;
+							case "左前卫":
+								LM--;
+								break;
+							case "右前卫":
+								RM--;
+								break;
+							case "左边锋":
+								LF--;
+								break;
+							case "右边锋":
+								RF--;
+								break;
+
+						}
+
+
+					}
+					switch (Role) {
+						case "左前卫":
+							$(this).find("p").text("左前卫");
+							break;
+						case "右前卫":
+							$(this).find("p").text("右前卫");
+							break;
+						case "后腰":
+							$(this).find("p").text("后腰");
+							break;
+						case "前腰":
+							$(this).find("p").text("前腰");
+							break;
+						default:
+							switch ($(this).find("p").text()) {
+								case "门将":
+									GK--;
+									break;
+								case "左边卫":
+									LD--;
+									break;
+								case "右边卫":
+									RD--;
+									break;
+								case "左前卫":
+									LM--;
+									break;
+								case "右前卫":
+									RM--;
+									break;
+								case "左边锋":
+									LF--;
+									break;
+								case "右边锋":
+									RF--;
+									break;
+
+							}
+							Role = "中前卫";
+							$(this).find("p").text("中前卫");
+
+							break;
+
+					}
+				}
+				//前场
+				else if (x > 899 && x < 1140) {
+
+					$(this).css("background-color", "#B20202");
+					if ($(this).find("p").text() == "替补") {
+						a++;
+					}
+					if (y < 100) {
+						if (LF == 0) {
+
+							LF++;
+							Role = "左边锋";
+							switch ($(this).find("p").text()) {
+								case "门将":
+									GK--;
+									break;
+								case "左边卫":
+									LD--;
+									break;
+								case "右边卫":
+									RD--;
+									break;
+								case "左前卫":
+									LM--;
+									break;
+								case "右前卫":
+									RM--;
+									break;
+								case "左边锋":
+									LF--;
+									break;
+								case "右边锋":
+									RF--;
+									break;
+
+							}
+						} else if ($(this).find("p").text() == "左边锋") {
+							Role = "左边锋";
+						}
+
+					}
+					if (y > 600) {
+						if (RF == 0) {
+
+							RF++;
+							Role = "右边锋";
+							switch ($(this).find("p").text()) {
+								case "门将":
+									GK--;
+									break;
+								case "左边卫":
+									LD--;
+									break;
+								case "右边卫":
+									RD--;
+									break;
+								case "左前卫":
+									LM--;
+									break;
+								case "右前卫":
+									RM--;
+									break;
+								case "左边锋":
+									LF--;
+									break;
+								case "右边锋":
+									RF--;
+									break;
+
+							}
+						} else if ($(this).find("p").text() == "右边锋") {
+							Role = "右边锋";
+						}
+
+
+					}
+					if (y < 600 && y > 100 & x < 1090) {
+
+						Role = "影子前锋";
+						switch ($(this).find("p").text()) {
+							case "门将":
+								GK--;
+								break;
+							case "左边卫":
+								LD--;
+								break;
+							case "右边卫":
+								RD--;
+								break;
+							case "左前卫":
+								LM--;
+								break;
+							case "右前卫":
+								RM--;
+								break;
+							case "左边锋":
+								LF--;
+								break;
+							case "右边锋":
+								RF--;
+								break;
+
+						}
+
+
+
+					}
+					switch (Role) {
+						case "左边锋":
+							$(this).find("p").text("左边锋");
+							break;
+						case "右边锋":
+							$(this).find("p").text("右边锋");
+							break;
+						case "影子前锋":
+							$(this).find("p").text("影子前锋");
+							break;
+						default:
+							switch ($(this).find("p").text()) {
+								case "门将":
+									GK--;
+									break;
+								case "左边卫":
+									LD--;
+									break;
+								case "右边卫":
+									RD--;
+									break;
+								case "左前卫":
+									LM--;
+									break;
+								case "右前卫":
+									RM--;
+									break;
+								case "左边锋":
+									LF--;
+									break;
+								case "右边锋":
+									RF--;
+									break;
+
+							}
+							Role = "中锋";
+
+							$(this).find("p").text("中锋");
+
+							break;
+
+					}
+
+				}
+
+
+
+
+
+				break;
+			}
+
+			if (a == 11 && $(this).find("p").text() != "替补") {
+				if (x > 65 && x < 400) {
+					$(this).css("background-color", " #007DDB");
+
+
+					if (x < 200 && y > 270 && y < 430) {
+
+						if (GK == 0) {
+							Role = "门将";
+							GK++
+							switch ($(this).find("p").text()) {
+								case "门将":
+									GK--;
+									break;
+								case "左边卫":
+									LD--;
+									break;
+								case "右边卫":
+									RD--;
+									break;
+								case "左前卫":
+									LM--;
+									break;
+								case "右前卫":
+									RM--;
+									break;
+								case "左边锋":
+									LF--;
+									break;
+								case "右边锋":
+									RF--;
+									break;
+
+							}
+						} else if (GK == 1) {
+							if ($(this).find("p").text() == "门将") {
+								Role = "门将";
+							} else {
+								Role = "清道夫";
+							}
+						}
+
+
+
+					} else if (y < 100) {
+						if (LD == 0) {
+
+							LD++;
+							Role = "左边卫";
+							switch ($(this).find("p").text()) {
+								case "门将":
+									GK--;
+									break;
+								case "左边卫":
+									LD--;
+									break;
+								case "右边卫":
+									RD--;
+									break;
+								case "左前卫":
+									LM--;
+									break;
+								case "右前卫":
+									RM--;
+									break;
+								case "左边锋":
+									LF--;
+									break;
+								case "右边锋":
+									RF--;
+									break;
+
+							}
+						} else if ($(this).find("p").text() == "左边卫") {
+							Role = "左边卫";
+						}
+					} else if (y > 600) {
+						if (RD == 0) {
+
+							RD++;
+							Role = "右边卫";
+							switch ($(this).find("p").text()) {
+								case "门将":
+									GK--;
+									break;
+								case "左边卫":
+									LD--;
+									break;
+								case "右边卫":
+									RD--;
+									break;
+								case "左前卫":
+									LM--;
+									break;
+								case "右前卫":
+									RM--;
+									break;
+								case "左边锋":
+									LF--;
+									break;
+								case "右边锋":
+									RF--;
+									break;
+
+							}
+						} else if ($(this).find("p").text() == "右边卫") {
+							Role = "右边卫";
+						}
+					}
+					switch (Role) {
+						case "门将":
+							$(this).css("background-color", "yellow");
+							$(this).find("p").text("门将");
+							break;
+						case "清道夫":
+							$(this).find("p").text("清道夫");
+							break;
+						case "左边卫":
+							$(this).find("p").text("左边卫");
+							break;
+						case "右边卫":
+							$(this).find("p").text("右边卫");
+							break;
+						default:
+							switch ($(this).find("p").text()) {
+								case "门将":
+									GK--;
+									break;
+								case "左边卫":
+									LD--;
+									break;
+								case "右边卫":
+									RD--;
+									break;
+								case "左前卫":
+									LM--;
+									break;
+								case "右前卫":
+									RM--;
+									break;
+								case "左边锋":
+									LF--;
+									break;
+								case "右边锋":
+									RF--;
+									break;
+
+							}
+							Role = "中后卫";
+							$(this).find("p").text("中后卫");
+
+							break;
+
+					}
+
+				}
+				//中场
+				else if (x > 399 && x < 900) {
+					$(this).css("background-color", "#4CAE4C");
+
+					if (y < 100) {
+						if (LM == 0) {
+
+							LM++;
+							Role = "左前卫";
+							switch ($(this).find("p").text()) {
+								case "门将":
+									GK--;
+									break;
+								case "左边卫":
+									LD--;
+									break;
+								case "右边卫":
+									RD--;
+									break;
+								case "左前卫":
+									LM--;
+									break;
+								case "右前卫":
+									RM--;
+									break;
+								case "左边锋":
+									LF--;
+									break;
+								case "右边锋":
+									RF--;
+									break;
+
+							}
+						} else if ($(this).find("p").text() == "左前卫") {
+							Role = "左前卫";
+						}
+
+					} else if (y > 600) {
+						if (RM == 0) {
+
+							RM++;
+							Role = "右前卫";
+							switch ($(this).find("p").text()) {
+								case "门将":
+									GK--;
+									break;
+								case "左边卫":
+									LD--;
+									break;
+								case "右边卫":
+									RD--;
+									break;
+								case "左前卫":
+									LM--;
+									break;
+								case "右前卫":
+									RM--;
+									break;
+								case "左边锋":
+									LF--;
+									break;
+								case "右边锋":
+									RF--;
+									break;
+
+							}
+						} else if ($(this).find("p").text() == "右前卫") {
+							Role = "右前卫";
+						}
+
+					} else if (y < 600 && y > 100 && x < 510) {
+
+						Role = "后腰";
+						switch ($(this).find("p").text()) {
+							case "门将":
+								GK--;
+								break;
+							case "左边卫":
+								LD--;
+								break;
+							case "右边卫":
+								RD--;
+								break;
+							case "左前卫":
+								LM--;
+								break;
+							case "右前卫":
+								RM--;
+								break;
+							case "左边锋":
+								LF--;
+								break;
+							case "右边锋":
+								RF--;
+								break;
+
+						}
+
+
+					} else if (y < 600 && y > 100 && x > 690) {
+
+						Role = "前腰";
+						switch ($(this).find("p").text()) {
+							case "门将":
+								GK--;
+								break;
+							case "左边卫":
+								LD--;
+								break;
+							case "右边卫":
+								RD--;
+								break;
+							case "左前卫":
+								LM--;
+								break;
+							case "右前卫":
+								RM--;
+								break;
+							case "左边锋":
+								LF--;
+								break;
+							case "右边锋":
+								RF--;
+								break;
+
+						}
+
+
+					}
+					switch (Role) {
+						case "左前卫":
+							$(this).find("p").text("左前卫");
+							break;
+						case "右前卫":
+							$(this).find("p").text("右前卫");
+							break;
+						case "后腰":
+							$(this).find("p").text("后腰");
+							break;
+						case "前腰":
+							$(this).find("p").text("前腰");
+							break;
+						default:
+							switch ($(this).find("p").text()) {
+								case "门将":
+									GK--;
+									break;
+								case "左边卫":
+									LD--;
+									break;
+								case "右边卫":
+									RD--;
+									break;
+								case "左前卫":
+									LM--;
+									break;
+								case "右前卫":
+									RM--;
+									break;
+								case "左边锋":
+									LF--;
+									break;
+								case "右边锋":
+									RF--;
+									break;
+
+							}
+							Role = "中前卫";
+							$(this).find("p").text("中前卫");
+
+							break;
+
+					}
+				}
+				//前场
+				else if (x > 899 && x < 1140) {
+
+					$(this).css("background-color", "#B20202");
+
+					if (y < 100) {
+						if (LF == 0) {
+
+							LF++;
+							Role = "左边锋";
+							switch ($(this).find("p").text()) {
+								case "门将":
+									GK--;
+									break;
+								case "左边卫":
+									LD--;
+									break;
+								case "右边卫":
+									RD--;
+									break;
+								case "左前卫":
+									LM--;
+									break;
+								case "右前卫":
+									RM--;
+									break;
+								case "左边锋":
+									LF--;
+									break;
+								case "右边锋":
+									RF--;
+									break;
+
+							}
+						} else if ($(this).find("p").text() == "左边锋") {
+							Role = "左边锋";
+						}
+
+					}
+					if (y > 600) {
+						if (RF == 0) {
+
+							RF++;
+							Role = "右边锋";
+							switch ($(this).find("p").text()) {
+								case "门将":
+									GK--;
+									break;
+								case "左边卫":
+									LD--;
+									break;
+								case "右边卫":
+									RD--;
+									break;
+								case "左前卫":
+									LM--;
+									break;
+								case "右前卫":
+									RM--;
+									break;
+								case "左边锋":
+									LF--;
+									break;
+								case "右边锋":
+									RF--;
+									break;
+
+							}
+						} else if ($(this).find("p").text() == "右边锋") {
+							Role = "右边锋";
+						}
+
+
+					}
+					if (y < 600 && y > 100 & x < 1090) {
+
+						Role = "影子前锋";
+						switch ($(this).find("p").text()) {
+							case "门将":
+								GK--;
+								break;
+							case "左边卫":
+								LD--;
+								break;
+							case "右边卫":
+								RD--;
+								break;
+							case "左前卫":
+								LM--;
+								break;
+							case "右前卫":
+								RM--;
+								break;
+							case "左边锋":
+								LF--;
+								break;
+							case "右边锋":
+								RF--;
+								break;
+
+						}
+
+
+
+					}
+					switch (Role) {
+						case "左边锋":
+							$(this).find("p").text("左边锋");
+							break;
+						case "右边锋":
+							$(this).find("p").text("右边锋");
+							break;
+						case "影子前锋":
+							$(this).find("p").text("影子前锋");
+							break;
+						default:
+							switch ($(this).find("p").text()) {
+								case "门将":
+									GK--;
+									break;
+								case "左边卫":
+									LD--;
+									break;
+								case "右边卫":
+									RD--;
+									break;
+								case "左前卫":
+									LM--;
+									break;
+								case "右前卫":
+									RM--;
+									break;
+								case "左边锋":
+									LF--;
+									break;
+								case "右边锋":
+									RF--;
+									break;
+
+							}
+							Role = "中锋";
+
+							$(this).find("p").text("中锋");
+
+							break;
+
+					}
+
+				}
+
+			}
+
+
+
+
+
+			//下场
+			if (x > 1139 || x < 66) {
+				//console.log("替补");
+
+				if ($(this).find("p").text() != "替补") {
+
+					$(this).find("p").text("替补");
+					$(this).css("background-color", "#D3D4D3");
+					a--;
+					switch ($(this).find("p").text()) {
+						case "门将":
+							GK--;
+							break;
+						case "左边卫":
+							LD--;
+							break;
+						case "右边卫":
+							RD--;
+							break;
+						case "左前卫":
+							LM--;
+							break;
+						case "右前卫":
+							RM--;
+							break;
+						case "左边锋":
+							LF--;
+							break;
+						case "右边锋":
+							RF--;
+							break;
+
+					}
+
+				}
+
+			}
+			console.log("x=" + x);
+			console.log("y=" + y);
+			console.log("a=" + a);
+			console.log("GK=" + GK);
+			console.log("LD=" + LD);
+			console.log("RF=" + RF);
+			console.log("LF=" + LF);
+			console.log("RD=" + RD);
+			console.log("LM=" + LM);
+			console.log("RM=" + RM);
+			console.log("Role=" + Role);
+
+
+
+		});
+	</script>
+</html>
